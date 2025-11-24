@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Karyawan • Absensi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">Absensi<span>Pro</span></div>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="employees.html" class="active">Karyawan</a>
+        <a href="attendance.html">Absensi</a>
+        <a href="report.html">Laporan</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Data Karyawan</h1>
+        <button class="btn" id="btnAdd">Tambah Karyawan</button>
+      </header>
+
+      <section class="panel">
+        <table class="table" id="empTable">
+          <thead>
+            <tr><th>#</th><th>Nama</th><th>NIK</th><th>Jabatan</th><th>Aksi</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <h3 id="modalTitle">Tambah Karyawan</h3>
+      <form id="empForm">
+        <label>Nama<input name="name" required /></label>
+        <label>NIK<input name="nik" required /></label>
+        <label>Jabatan<input name="role" /></label>
+        <div class="modal-actions">
+          <button type="button" class="btn ghost" id="btnCancel">Batal</button>
+          <button type="submit" class="btn">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>initPage('employees')</script>
+</body>
+</html>

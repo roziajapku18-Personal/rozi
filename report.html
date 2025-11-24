@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laporan • Absensi</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">Absensi<span>Pro</span></div>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="employees.html">Karyawan</a>
+        <a href="attendance.html">Absensi</a>
+        <a href="report.html" class="active">Laporan</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Laporan Absensi</h1>
+        <button class="btn" id="btnExport">Export Laporan</button>
+      </header>
+
+      <section class="panel">
+        <table class="table" id="reportTable">
+          <thead>
+            <tr><th>#</th><th>Nama</th><th>Hadir</th><th>Izin</th><th>Alpha</th><th>Total Hari</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+  <script>initPage('report')</script>
+</body>
+</html>

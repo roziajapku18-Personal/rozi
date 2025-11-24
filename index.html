@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dashboard • Absensi Karyawan</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+<div class="brand">Absensi<span>Pro</span></div>
+<nav>
+<a href="index.html" class="active">Dashboard</a>
+<a href="employees.html">Karyawan</a>
+<a href="attendance.html">Absensi</a>
+<a href="report.html">Laporan</a>
+</nav>
+<div class="sidebar-foot">v1.0 — Local</div>
+</aside>
+
+
+<main class="main">
+<header class="header">
+<h1>Dashboard</h1>
+<div id="now" class="clock">--:--:--</div>
+</header>
+
+
+<section class="grid">
+<div class="card" id="card-employees">
+<h3>Total Karyawan</h3>
+<p class="big" id="totalEmployees">0</p>
+</div>
+<div class="card" id="card-today">
+<h3>Absensi Hari Ini</h3>
+<p class="big" id="todayCount">0</p>
+</div>
+<div class="card" id="card-present">
+<h3>Sedang Hadir</h3>
+<p class="big" id="presentNow">0</p>
+</div>
+</section>
+
+
+<section class="panel">
+<h2>Aktivitas Terakhir</h2>
+<ul id="recentList" class="list"></ul>
+</section>
+</main>
+</div>
+
+
+<script src="app.js"></script>
+<script>initPage('dashboard')</script>
+</body>
+</html>
